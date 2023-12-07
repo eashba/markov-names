@@ -146,7 +146,7 @@ export default function MultiDatasetGenerator() {
               </p>
             }
           >
-            <p class='font-baskerville text-4xl font-semibold  leading-normal'>
+            <p class='font-baskerville text-2xl md:text-4xl font-semibold  leading-normal'>
               Generating{'  '}
               <For each={selectedNamesGroups()}>
                 {(selectedNameGroup, i) => (
@@ -169,7 +169,7 @@ export default function MultiDatasetGenerator() {
         </div>
 
         <Show when={selectedNamesGroups().length > 0}>
-          <div class='flex flex-col justify-center gap-20 md:flex-row'>
+          <div class='flex flex-col justify-center md:gap-20 md:flex-row gap-4'>
             <div>
               <p class='mb-3 text-xl font-semibold'>Settings</p>
               {/* TODO: make a multi-namegroup settings*/}
