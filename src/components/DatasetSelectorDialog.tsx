@@ -45,7 +45,7 @@ const NameGroupCheckboxList = (props: NameGroupCheckboxListPropsType) => {
       <div class='border-grey overflow-x-auto overflow-y-auto rounded-lg border'>
         {merged.nameGroups.map((nameGroup: NameGroupType, idx: number) => {
           return (
-            <div class='border-b-grey w-full border-b py-1 last:border-b-0 md:px-6 md:py-2'>
+            <div class='border-b-grey w-full border-b py-1 last:border-b-0 md:px-6 md:py-2 px-2'>
               <div class='flex justify-between gap-6'>
                 <div class='flex justify-between gap-2'>
                   <p>{nameGroup.name}</p>
