@@ -137,7 +137,7 @@ export default function MultiDatasetGenerator() {
     <>
       <Banner />
       <div class='px-12 py-16'>
-        <div class='pb-12 text-center'>
+        <div class='md:pb-12 pb-4 text-center'>
           <Show
             when={selectedNamesGroups().length > 0}
             fallback={
