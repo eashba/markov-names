@@ -42,12 +42,10 @@ export const buildNamesPoolFromGroupAndSettings = (
   ...(settings.useFemale ? nameGroup.female : []),
 ]
 
-//TODO when building name chains from multiple groups, do thinigs like treate all names as surnames if necessary, etc, unisex, etc.
 export const buildNamesPoolFromMultipleGroupsAndSettings = (
   nameGroups: NameGroupType[],
   settings: MultiDatasetChainSettingsType
 ) => {
-  //for each nameGroup, build out of settings. Then, adjust the names pools as necessary
   const namesPools = nameGroups.map((nameGroup: NameGroupType) =>
     buildNamesPoolFromGroupAndSettings(nameGroup, settings)
   )
@@ -105,5 +103,3 @@ export const generateNamesWithChains = (
   }
   return names
 }
-
-//TODO treat all names as unisex if one or more generators are unisex.

@@ -1,3 +1,5 @@
+// DEPRECATED: This page is no longer used, but is kept for reference
+
 import { createSignal, onMount, For, createEffect } from 'solid-js'
 import { NameGroupType, getGroupByKey } from '../names/name-groups'
 import { A, useParams } from '@solidjs/router'

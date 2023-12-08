@@ -48,8 +48,6 @@ export default function MultiDatasetGenerator() {
 
   //When there are updates to the nameGroups, rebuild the namesPools, and settings.
   createEffect(() => {
-    // console.log('settomg defai;t settings')
-
     if (selectedNamesGroups().length === 0) {
       setNamesPool([])
       setSurnamesPool([])
@@ -128,7 +126,6 @@ export default function MultiDatasetGenerator() {
 
   const doSetSelectedNameGroups = (newNameGroups: NameGroupType[]) => {
     //Reset the settings first.
-    console.log('Resetting settings')
     setChainSettings(defaultMultiDatasetChainSettings)
     setSelectedNamesGroups(newNameGroups)
   }
@@ -172,15 +169,9 @@ export default function MultiDatasetGenerator() {
           <div class='flex flex-col justify-center md:gap-20 md:flex-row gap-4'>
             <div>
               <p class='mb-3 text-xl font-semibold'>Settings</p>
-              {/* TODO: make a multi-namegroup settings*/}
-              {/* <SettingsTable
-              updateSettings={updateChainSettings} //Providing setter function
-              chainSettings={chainSettings()}
-              nameGroup={nameGroup()!}
-            /> */}
 
               <MultiSettingsTable
-                updateSettings={updateChainSettings} //Providing setter function
+                updateSettings={updateChainSettings}
                 chainSettings={chainSettings()}
                 nameGroups={selectedNamesGroups()}
               />
@@ -193,7 +184,7 @@ export default function MultiDatasetGenerator() {
               </div>
               <div class='flex w-full justify-end py-4'>
                 <StyledButton
-                  onClick={() => deriveGenerateAndSetNames()} //Providing derived signal function
+                  onClick={() => deriveGenerateAndSetNames()}
                   label='Generate!'
                   disabled={!nameChain()}
                 />

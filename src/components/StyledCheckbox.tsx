@@ -7,7 +7,6 @@ type PropsType = {
   checked: boolean
 }
 
-//TODO, just get this working with local state before trying to hook it up to parent.
 export function StyledCheckbox(props: PropsType) {
   const merged = mergeProps(
     {

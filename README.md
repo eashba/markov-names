@@ -1,6 +1,6 @@
 # Markov's Names
 
-insert url here
+https://markov-names.vercel.app/
 
 ## What is this?
 

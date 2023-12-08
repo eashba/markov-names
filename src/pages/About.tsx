@@ -1,9 +1,3 @@
-// import NameGroupLink from '../components/NameGroupLink'
-// import {
-//   NameGroupType,
-//   fantasyNameGroups,
-//   realNameGroups,
-// } from '../names/name-groups'
 import { Banner } from '../components/Banner'
 
 export default function About() {
@@ -46,7 +40,7 @@ export default function About() {
               This is a free and open source project, provided under the MIT
               license. Source code is avalable{' '}
               <a
-                href='https://github.com/eashba/markovs-names'
+                href='https://github.com/eashba/markov-names'
                 target='_blank'
                 class='font-bold  text-blue-500 hover:underline'
               >
