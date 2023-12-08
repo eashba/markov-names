@@ -18,8 +18,21 @@ export default function About() {
               >
                 Markov Chain
               </a>{' '}
-              process to procedurally generate new, unique names from original datasets
-              of existing names. This project relies heavily on{' '}
+              process to procedurally generate new, unique names from original
+              datasets of existing names.
+              <br />
+              <br />
+              In the context of name generation, a Markov chain analyzes a set
+              of existing names and calculates the likelihood of one letter
+              following another. One advantage of this technique is that we are
+              able to easily combine multiple sets of names, and generate
+              interesting and new names with elements of each name set. One
+              disadvantage of this technique is that generated names are likely
+              to break existing naming conventions, and risk sounding completely
+              gibberish or alien.
+              <br />
+              <br />
+              This project relies heavily on{' '}
               <a
                 href='https://github.com/mrsharpoblunto/foswig.js'
                 target='_blank'
@@ -34,6 +47,19 @@ export default function About() {
               The tech stack for this project includes: Typescript • SolidJS •
               Tailwind CSS • Kobalte • Vercel
             </p>
+
+            <p class='mb-2 mt-10 text-2xl font-semibold'>TODOs</p>
+            <p>Some other features I'd like to add to this project include:</p>
+            <ul class='list-inside list-disc'>
+              <li>Support for custom lists in-browser</li>
+              <li>
+                The ability to control the weighting of each dataset when
+                combining them
+              </li>
+              <li>
+                Adding more datasets, and further refinement of existing ones
+              </li>
+            </ul>
 
             <p class='mb-2 mt-10 text-2xl font-semibold'>Usage</p>
             <p>

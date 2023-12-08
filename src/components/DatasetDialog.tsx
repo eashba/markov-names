@@ -45,13 +45,16 @@ export default function DatasetDialog(props: PropsType) {
                   This set reflects the masculine/feminine settings if present.
                 </p>
                 <p>
-                  The quantity of masculine/feminine names may be imbalanced, which
-                  can result in an imbalanced output of names when incuding both names in the dataset.
+                  The quantity of masculine/feminine names may be imbalanced,
+                  which can result in an imbalanced output of names when
+                  incuding both names in the dataset.
                 </p>
                 <p>
                   If "Allow generation of names in dataset" is enabled, name
                   generation will have a chance to reproduce an existing name in
-                  the set. Otherwise, the generated names will be unique.
+                  the set. Otherwise, the generated names will be unique. This
+                  can lead to much more random and unique (and potentially
+                  gibberish) names.
                 </p>
               </div>
             </Dialog.Title>
